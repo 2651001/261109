@@ -4,95 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunar :: 내 영화 보드</title>
+    <title>내 영화 보드</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!--   <body class="detail-page is-loading"> -->
+    <script src="./script.js"></script>
     <header class="top">
-        <h1>내 영화 보드</h1>
-        <nav>
-            <ul>
-                <li><a href="#mine">내 인생 영화</a></li>
-                <li><a href="#boxoffice">박스오피스</a></li>
-                <li><a href="detail.html">상세</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>내 영화 보드</h1>
+            <nav>
+                <ul>
+                    <li><a href="#mine">내 인생 영화</a></li>
+                    <li><a href="#boxoffice">박스오피스</a></li>
+                    <li><a href="detail.html">상세보기</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <section class="hero">
-        <h2>요즘 내가 고른 영화 다섯 편</h2>
-        <p>포스터 위에 마우스를 올려 보세요.</p>
+        <div class="hero-content">
+            <h2>요즘 내가 고른 영화 다섯 편</h2>
+            <p>포스터 위에 마우스를 올려 보세요.</p>
+        </div>
     </section>
-
-
-
-
 
     <main>
         <section id="mine">
             <h2>내 인생 영화 5편</h2>
             <div class="board">
-                <div class="skeleton"></div>
-                <div class="skeleton"></div>
-                <div class="skeleton"></div>
-                <article class="card"><img class="poster"
-                        src="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg"
-                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
-                    <span class="badge">7.09</span>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/mt6uZzy7DAsncHlGGzMsyNgLR6v.jpg" alt="스파이더맨: 브랜드 뉴 데이">
+                    <span class="badge">8.4</span>
                     <div class="info">
-                        <h3>킹덤 오브 헤븐</h3>
-                        <p class="year">2005-05-03</p>
-                        <p class="overview">전쟁으로 가족을 잃고 깊은 슬픔에 잠겨있는 프랑스의 젊은 대장장이 발리안에게 부상당한 십자군 기사 고프리가 찾아온다.</p>
+                        <h3>스파이더맨: 브랜드 뉴 데이</h3>
+                        <p class="year">2026-07-29</p>
+                        <p class="overview">4년 전 소중한 사람들을 지키기 위해 모두의 기억에서 사라진 피터 파커. 친절한 이웃 스파이더맨으로서 뉴욕을 지키며 고독한 삶을 살아가던 피터는 어느 날, 예상치 못한 DNA 변이로 인해 통제 불가능한 힘에 사로잡히고 그의 진짜 정체를 알고 있는 적까지 마주하게 된다. 타인의 의식을 조종하는 정체불명의 존재로 인해 모두가 피터를 노리는 적이 될 수 있는 혼란 속에서 피터는 다시 위협에 빠진 MJ와 모두를 지키기 위해 스파이더맨으로 그들 앞에 서게 되는데...</p>
                     </div>
                 </article>
-                <article class="card"><img class="poster"
-                        src="https://image.tmdb.org/t/p/w342/rBM5o2HpmCfDejuIPybI09tkY3V.jpg"
-                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
-                    <span class="badge">7.53</span>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/hjki9weYYVABvkpZbX5jBOmKXXv.jpg" alt="스파이더맨: 홈커밍">
+                    <span class="badge">7.3</span>
                     <div class="info">
-                        <h3>패션 오브 크라이스트</h3>
-                        <p class="year">2004-02-25</p>
-                        <p class="overview">마지막 만찬 후에 겟세마니 동산에 올라간 예수는 그 곳에서 사탄의 유혹을 물리친다.</p>
+                        <h3>스파이더맨: 홈커밍</h3>
+                        <p class="year">2017-07-05</p>
+                        <p class="overview">러시아 생물공학자 네코비치 박사는 비행기 내에서 이단 헌트로 변장한 앰브로즈에게 벨레로폰을 탈취당한 후 살해된다. IMF 요원 이단 헌트는 네코비치 박사가 테러리스트 앰브로즈에게 탈취당한 것이 무엇인지 알아내기 위해 파견된다. 키메라라는 것이 인플루엔자를 없애기 위한 완벽한 치료제인 벨레로폰을 유전적으로 조합하다 부수적으로 만들어진 악성 바이러스라는 사실을 알아낸 헌트는 임무를 위해 앰브로즈의 전 애인 니아 홀을 포섭한다. 헌트는 니아와 사랑에 빠지지만 키메라 바이러스를 파괴하기 위해 니아를 앰브로즈에게 보내는데...</p>
                     </div>
                 </article>
-                <article class="card"><img class="poster"
-                        src="https://image.tmdb.org/t/p/w342/vSY6MgDWD5Ch5I87X8BaxZyydCI.jpg"
-                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
-                    <span class="badge">7.14</span>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/a1Kup5VnmxjAHnsT3Sz7RtrC9UU.jpg" alt="어메이징 스파이더맨">
+                    <span class="badge">6.7</span>
                     <div class="info">
-                        <h3>나니아 연대기: 사자, 마녀 그리고 옷장</h3>
-                        <p class="year">2005-12-07</p>
-                        <p class="overview">제2차 세계대전 중의 영국. 공습을 피해 디고리 교수의 시골 별장으로 간 페번시가의 네 남매인 피터, 수잔, 에드먼드, 루시는 마법의
-                            옷장을
-                            통해 신비로운
-                            나라 나니아로 들어선다.</p>
+                        <h3>어메이징 스파이더맨</h3>
+                        <p class="year">2012-06-28</p>
+                        <p class="overview">어릴적 사라진 부모 대신 삼촌 내외와 살고 있는 피터 파커는 평범한 학교 생활을 하며 일상을 보내고, 같은 학교 학생 그웬 스테이시와 첫사랑에 빠져 우정과 사랑, 그리고 둘 만의 비밀을 키워나간다. 어느 날 아버지가 사용했던 가방을 발견하고 부모님의 실종사건에 대한 의심을 품게 된 그는 숨겨져 왔던 과거의 비밀을 추적하게 된다. 아버지의 옛 동료 코너스 박사의 실험실을 찾아가게 된 피터는 우연한 사고로 특별한 능력을 갖게 되고, 피터의 도움으로 연구를 완성한 코너스 박사는 자신의 숨겨진 자아인 악당 리자드를 탄생시키는데...</p>
                     </div>
                 </article>
-                <article class="card"><img class="poster"
-                        src="https://image.tmdb.org/t/p/w342/r18JdjImbWDRwkbVDIzWoLQqkCo.jpg"
-                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
-                    <span class="badge">8.44</span>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/d9V6Q9vpVpmaca7vwSUbCajtDb3.jpg" alt="스파이더맨: 뉴 유니버스">
+                    <span class="badge">8.4</span>
                     <div class="info">
-                        <h3>반지의 제왕: 반지 원정대</h3>
-                        <p class="year">2001-12-18</p>
-                        <p class="overview">호빗이라 불리우는 난장이 종족 중의 한 명인 프로도는 자신의 삼촌에게서 우연히 절대 반지를 물려받게 되고, 마법사 간달프를 통해서
-                            절대반지가
-                            사우론의 손에
-                            들어가면 악의 세력이 세상을 지배하게 된다는 것을 알게 된다.</p>
+                        <h3>스파이더맨: 뉴 유니버스</h3>
+                        <p class="year">2018-12-06</p>
+                        <p class="overview">평범한 10대 마일스 모랄레스는 우연히 방사능 거미에 물려 스파이더맨 능력을 가지게 된다. 혼란스러워하던 마일스는 악당과 싸우고 있는 피터 파커를 마주치게 되고 피터 파커는 마일스가 자신과 같은 능력을 가지고 있음을 직감한다. 여러 개의 평행세계가 존재한다는 것을 알게 된 마일스와 피터 파커는 이후 스파이더우먼 스파이더 그웬, 스파이더맨 누아르, 스파이더햄 등 평행세계 속 공존하는 모든 스파이더맨들을 만나게 되는데... 하나의 유니버스에서 만나 팀을 결성한 스파이더맨들은 과연 세계를 구할 수 있을까?</p>
                     </div>
                 </article>
-                <article class="card"><img class="poster"
-                        src="https://image.tmdb.org/t/p/w342/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg"
-                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
-                    <span class="badge">7.80</span>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/fvqoI9r1GU2EFkc0xjZ6dKCuDVR.jpg" alt="스파이더맨: 노 웨이 홈">
+                    <span class="badge">7.9</span>
                     <div class="info">
-                        <h3>몬티 파이튼의 성배</h3>
-                        <p class="year">1975-04-03</p>
-                        <p class="overview">아더왕은 영국 전역을 돌아다니며 자신들을 보좌할 기사들을 모집한다.</p>
+                        <h3>스파이더맨: 노 웨이 홈</h3>
+                        <p class="year">2021-12-15</p>
+                        <p class="overview">미스테리오의 계략으로 세상에 정체가 탄로난 스파이더맨 피터 파커는 하루 아침에 평범한 일상을 잃게 된다. 문제를 해결하기 위해 닥터 스트레인지를 찾아가 도움을 청하지만 뜻하지 않게 멀티버스가 열리면서 각기 다른 차원의 불청객들이 나타난다. 닥터 옥토퍼스를 비롯해 스파이더맨에게 깊은 원한을 가진 숙적들의 강력한 공격에 피터 파커는 사상 최악의 위기를 맞게 되는데...</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="boxoffice">
+            <h2>일별 박스오피스 TOP 5</h2>
+            <p class="basis">KOBIS 기준일 2026-06-14</p>
+            <div class="board">
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/hDPGsJxo8xX0OyqcMB8xI3RdaF3.jpg" alt="군체">
+                    <span class="rank">1</span>
+                    <span class="badge">8.2</span>
+                    <div class="info">
+                        <h3>군체</h3>
+                        <p class="year">2026-05-21</p>
+                        <p class="overview">서울 도심의 초고층 빌딩에서 정체불명의 집단 감염사태가 발생한다. 건물은 순식간에 봉쇄되고, 그 안에 있던 사람들은 그대로 고립된다. 처음에는 짐승처럼 기어다니던 감염자들은 점점 진화하며 두 발로 걷기 시작하고, 사람을 식별하며 무리를 지어 생존자들을 공격한다. 생명공학자 권세정과 생존자들은 자신의 몸에 백신을 주입했다고 신고한 서영철을 찾아 구조대가 기다리는 옥상으로 향한다. 하지만 올라갈수록 상황은 점점 더 예측할 수 없게 변해가고, 서영철은 감염자들을 앞세워 생존자들 앞을 막아서는데...</p>
+                        <p class="audience">누적 5,212,855명</p>
+                        <p class="change up">-</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/piMZqtd0gGS7OgkhDwiQ7vVViBQ.jpg" alt="마이클">
+                    <span class="rank">2</span>
+                    <span class="badge">8.5</span>
+                    <div class="info">
+                        <h3>마이클</h3>
+                        <p class="year">2026-04-22</p>
+                        <p class="overview">어린 나이에 형제들과 ‘잭슨 파이브’ 그룹의 막내로 데뷔하자마자 음악적 천재성과 스타성으로 주목을 받은 ‘마이클 잭슨’. 전세계적인 스타로 성공하지만, 그는 가족에 대한 책임감과 자신의 음악적 정체성 사이에서 고민에 빠지게 된다.</p>
+                        <p class="audience">누적 1,589,035명</p>
+                        <p class="change up">-</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/tcqLtpb8EUDqbct2YFl8ZGNfP2p.jpg" alt="백룸">
+                    <span class="rank">3</span>
+                    <span class="badge">7.0</span>
+                    <div class="info">
+                        <h3>백룸</h3>
+                        <p class="year">2026-05-27</p>
+                        <p class="overview">그곳은 대체 무엇인가? 낯설지만 익숙한 세계, 출구도 입구도 찾을 수 없다. 당신도 입장하시겠습니까?</p>
+                        <p class="audience">누적 5,212,855명</p>
+                        <p class="change up">+1</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/s4IUDzLZJb4CosgEXcmouY32Jfg.jpg" alt="와일드 씽">
+                    <span class="rank">4</span>
+                    <span class="badge">6.2</span>
+                    <div class="info">
+                        <h3>와일드 씽</h3>
+                        <p class="year">2026-06-03</p>
+                        <p class="overview">한때 가요계를 휩쓸었지만 예기치 못한 사건에 휘말려 하루아침에 해체된 3인조 혼성 댄스 그룹 트라이앵글. 20년 만에 리더 현우에게 재기의 발판이 될 트라이앵글 공연 제안이 들어오고, 인생의 마지막 기회를 잡기 위해 멤버들을 찾아 나선다. 생계형 방송인이 된 현우, 재벌가 며느리가 된 도미, 솔로 앨범으로 빚더미에 앉은 상구까지 세 사람은 다시 모여 공연장으로 향하지만, 과거 트라이앵글의 라이벌 발라드 왕자 성곤과 악연으로 얽힌 전소속사 박대표까지 나타나며 상황은 점점 걷잡을 수 없이 꼬여가는데…</p>
+                        <p class="audience">누적 869,723명</p>
+                        <p class="change up">-</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/kUYfLv9V5mKPb2lJadzgOI67AFt.jpg" alt="싱 스트리트">
+                    <span class="rank">5</span>
+                    <span class="badge">7.9</span>
+                    <div class="info">
+                        <h3>싱 스트리트</h3>
+                        <p class="year">2016-03-11</p>
+                        <p class="overview">‘코너’는 전학을 가게 된 학교에서 모델처럼 멋진 ‘라피나’를 보고 첫 눈에 반해 사랑에 빠진다. ‘라피나’에게 잘 보이고 싶은 마음에 덜컥 밴드를 하고 있다는 거짓말을 한 ‘코너’는 급기야 뮤직비디오 출연까지 제안하고 승낙을 얻는다. 날아갈 것만 같은 기분도 잠시, ‘코너’는 어설픈 멤버들을 모아 ‘싱 스트리트’라는 밴드를 급 결성하고 ‘듀란듀란’, ‘아-하’, ‘더 클래쉬’ 등 집에 있는 음반들을 찾아가며 음악을 만들기 시작한다. 첫 노래를 시작으로 조금씩 ‘라피나’의 마음을 움직인 ‘코너’는 그녀를 위해 최고의 노래를 만들고 인생 첫 번째 콘서트를 준비하는데… 첫 눈에 반한 그녀를 위한 인생 첫 번째 노래! ‘싱 스트리트’의 가슴 설레는 사운드가 지금 시작된다!</p>
+                        <p class="audience">누적 589,440명</p>
+                        <p class="change down">-1</p>
                     </div>
                 </article>
             </div>
@@ -100,96 +154,16 @@
 
         <section id="about">
             <h2>이 보드에 대하여</h2>
-            <p>만든 사람과 영화를 고른 기준을 한두 문장으로 적습니다.</p>
-            <p>포스터와 영화 정보는 TMDB 검색 결과를 그대로 옮겼습니다.</p>
-        </section>
-      
-        <section id="boxoffice">
-            <h2>일별 박스오피스 TOP 5</h2>
-            <p class="basis">KOBIS 기준일 2026-10-25</p>
-            <div class="board">
-                <div class="skeleton"></div>
-                <div class="skeleton"></div>
-                <div class="skeleton"></div>
-                <article class="card">
-                    <img class="poster" src="https://image.tmdb.org/t/p/w342/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg"
-                        alt="영화명 포스터">
-                    <span class="rank">1</span>
-                    <span class="badge">7.4</span>
-                    <div class="info">
-                        <h3>극장판 치이카와: 인어 섬의 비밀</h3>
-                        <p class="year">개봉 2026-09-30</p>
-                        <p class="audience">누적 2,248,126명</p>
-                        <p class="change">-</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="poster" src="https://image.tmdb.org/t/p/w342/c55ijsOdntj6P25vDwHLdgsBpmV.jpg"
-                        alt="영화명 포스터">
-                    <span class="rank">2</span>
-                    <span class="badge">7.2</span>
-                    <div class="info">
-                        <h3>암살자(들)</h3>
-                        <p class="year">개봉 2026-09-23</p>
-                        <p class="audience">누적 3,374,510명</p>
-                        <p class="change">-</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="poster" src="https://image.tmdb.org/t/p/w342/wkm9BQLok7U2KihcCspCa663Qse.jpg"
-                        alt="영화명 포스터">
-                    <span class="rank">3</span>
-                    <span class="badge">8</span>
-                    <div class="info">
-                        <h3>실낙원</h3>
-                        <p class="year">개봉 2026-10-21</p>
-                        <p class="audience">누적 104,874명</p>
-                        <p class="change">-</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="poster" src="https://image.tmdb.org/t/p/w342/ueigb5zra1tj6FTK9yhh2P33P9B.jpg"
-                        alt="영화명 포스터">
-                    <span class="rank">4</span>
-                    <span class="badge">6.18</span>
-                    <div class="info">
-                        <h3>타짜: 벨제붑의 노래</h3>
-                        <p class="year">개봉 2026-09-23</p>
-                        <p class="audience">누적 1,999,477명</p>
-                        <p class="change up">1</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img class="poster" src="https://image.tmdb.org/t/p/w342/LSGpoSAlitss0KOvVakkeUToZo.jpg"
-                        alt="영화명 포스터">
-                    <span class="rank">5</span>
-                    <span class="badge">7.59</span>
-                    <div class="info">
-                        <h3>클레이페이스</h3>
-                        <p class="year">개봉 2026-10-21</p>
-                        <p class="audience">누적 77,153명</p>
-                        <p class="change down">-1</p>
-                    </div>
-                </article>
-            </div>
+            <p>스파이더맨 시리즈와 최신 박스오피스 인기 영화들을 모아둔 개인 영화 보드입니다.</p>
+            <p>포스터와 영화 정보는 TMDB 검색 결과를 바탕으로 작성되었습니다.</p>
         </section>
     </main>
 
-
-
     <footer>
-        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
-            This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
         <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
-        <p>박스오피스 데이터: 영화진흥위원회 영화관입장권통합전산망(KOBIS), 기준일 2026-10-25</p>
+        <p>박스오피스 데이터: 영화진흥위원회 영화관입장권통합전산망(KOBIS), 기준일 2026-06-14</p>
     </footer>
-
-    <script src="./data.js"></script>
-    <script src="./app.js"></script>
 </body>
 
 </html>
