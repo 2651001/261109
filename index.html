@@ -1,44 +1,195 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 영화 5편</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- 상단 네비게이션 바 -->
-  <nav class="navbar">
-    <div class="logo">내 영화 보드</div>
-    <div class="menu">
-      <a href="#">보드</a>
-      <a href="#">소개</a>
-      <a href="#">성적</a>
-    </div>
-  </nav>
 
-  <!-- 메인 컨테이너 -->
-  <main class="container">
-    <!-- 히어로 배너 섹션 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar :: 내 영화 보드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--   <body class="detail-page is-loading"> -->
+    <header class="top">
+        <h1>내 영화 보드</h1>
+        <nav>
+            <ul>
+                <li><a href="#mine">내 인생 영화</a></li>
+                <li><a href="#boxoffice">박스오피스</a></li>
+                <li><a href="detail.html">상세</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero">
-      <div class="hero-content">
         <h2>요즘 내가 고른 영화 다섯 편</h2>
         <p>포스터 위에 마우스를 올려 보세요.</p>
-        <!-- 10주차 자바스크립트 결과 한 줄 출력용 -->
-        <pre id="out" class="hero-out"></pre>
-      </div>
     </section>
 
-    <!-- 영화 카드 5개가 들어갈 그리드 영역 -->
-    <div id="movie-grid" class="movie-grid"></div>
-  </main>
 
-  <footer>
-    <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
-  </footer>
 
-  <!-- 스크립트: data.js가 먼저 오고 그 다음 app.js -->
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+
+
+    <main>
+        <section id="mine">
+            <h2>내 인생 영화 5편</h2>
+            <div class="board">
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+                <article class="card"><img class="poster"
+                        src="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg"
+                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
+                    <span class="badge">7.09</span>
+                    <div class="info">
+                        <h3>킹덤 오브 헤븐</h3>
+                        <p class="year">2005-05-03</p>
+                        <p class="overview">전쟁으로 가족을 잃고 깊은 슬픔에 잠겨있는 프랑스의 젊은 대장장이 발리안에게 부상당한 십자군 기사 고프리가 찾아온다.</p>
+                    </div>
+                </article>
+                <article class="card"><img class="poster"
+                        src="https://image.tmdb.org/t/p/w342/rBM5o2HpmCfDejuIPybI09tkY3V.jpg"
+                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
+                    <span class="badge">7.53</span>
+                    <div class="info">
+                        <h3>패션 오브 크라이스트</h3>
+                        <p class="year">2004-02-25</p>
+                        <p class="overview">마지막 만찬 후에 겟세마니 동산에 올라간 예수는 그 곳에서 사탄의 유혹을 물리친다.</p>
+                    </div>
+                </article>
+                <article class="card"><img class="poster"
+                        src="https://image.tmdb.org/t/p/w342/vSY6MgDWD5Ch5I87X8BaxZyydCI.jpg"
+                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
+                    <span class="badge">7.14</span>
+                    <div class="info">
+                        <h3>나니아 연대기: 사자, 마녀 그리고 옷장</h3>
+                        <p class="year">2005-12-07</p>
+                        <p class="overview">제2차 세계대전 중의 영국. 공습을 피해 디고리 교수의 시골 별장으로 간 페번시가의 네 남매인 피터, 수잔, 에드먼드, 루시는 마법의
+                            옷장을
+                            통해 신비로운
+                            나라 나니아로 들어선다.</p>
+                    </div>
+                </article>
+                <article class="card"><img class="poster"
+                        src="https://image.tmdb.org/t/p/w342/r18JdjImbWDRwkbVDIzWoLQqkCo.jpg"
+                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
+                    <span class="badge">8.44</span>
+                    <div class="info">
+                        <h3>반지의 제왕: 반지 원정대</h3>
+                        <p class="year">2001-12-18</p>
+                        <p class="overview">호빗이라 불리우는 난장이 종족 중의 한 명인 프로도는 자신의 삼촌에게서 우연히 절대 반지를 물려받게 되고, 마법사 간달프를 통해서
+                            절대반지가
+                            사우론의 손에
+                            들어가면 악의 세력이 세상을 지배하게 된다는 것을 알게 된다.</p>
+                    </div>
+                </article>
+                <article class="card"><img class="poster"
+                        src="https://image.tmdb.org/t/p/w342/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg"
+                        alt="https://image.tmdb.org/t/p/w342/bwQ4a50Jp0aU1jpoM4m1PbEzo36.jpg">
+                    <span class="badge">7.80</span>
+                    <div class="info">
+                        <h3>몬티 파이튼의 성배</h3>
+                        <p class="year">1975-04-03</p>
+                        <p class="overview">아더왕은 영국 전역을 돌아다니며 자신들을 보좌할 기사들을 모집한다.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>이 보드에 대하여</h2>
+            <p>만든 사람과 영화를 고른 기준을 한두 문장으로 적습니다.</p>
+            <p>포스터와 영화 정보는 TMDB 검색 결과를 그대로 옮겼습니다.</p>
+        </section>
+      
+        <section id="boxoffice">
+            <h2>일별 박스오피스 TOP 5</h2>
+            <p class="basis">KOBIS 기준일 2026-10-25</p>
+            <div class="board">
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg"
+                        alt="영화명 포스터">
+                    <span class="rank">1</span>
+                    <span class="badge">7.4</span>
+                    <div class="info">
+                        <h3>극장판 치이카와: 인어 섬의 비밀</h3>
+                        <p class="year">개봉 2026-09-30</p>
+                        <p class="audience">누적 2,248,126명</p>
+                        <p class="change">-</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/c55ijsOdntj6P25vDwHLdgsBpmV.jpg"
+                        alt="영화명 포스터">
+                    <span class="rank">2</span>
+                    <span class="badge">7.2</span>
+                    <div class="info">
+                        <h3>암살자(들)</h3>
+                        <p class="year">개봉 2026-09-23</p>
+                        <p class="audience">누적 3,374,510명</p>
+                        <p class="change">-</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/wkm9BQLok7U2KihcCspCa663Qse.jpg"
+                        alt="영화명 포스터">
+                    <span class="rank">3</span>
+                    <span class="badge">8</span>
+                    <div class="info">
+                        <h3>실낙원</h3>
+                        <p class="year">개봉 2026-10-21</p>
+                        <p class="audience">누적 104,874명</p>
+                        <p class="change">-</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/ueigb5zra1tj6FTK9yhh2P33P9B.jpg"
+                        alt="영화명 포스터">
+                    <span class="rank">4</span>
+                    <span class="badge">6.18</span>
+                    <div class="info">
+                        <h3>타짜: 벨제붑의 노래</h3>
+                        <p class="year">개봉 2026-09-23</p>
+                        <p class="audience">누적 1,999,477명</p>
+                        <p class="change up">1</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/LSGpoSAlitss0KOvVakkeUToZo.jpg"
+                        alt="영화명 포스터">
+                    <span class="rank">5</span>
+                    <span class="badge">7.59</span>
+                    <div class="info">
+                        <h3>클레이페이스</h3>
+                        <p class="year">개봉 2026-10-21</p>
+                        <p class="audience">누적 77,153명</p>
+                        <p class="change down">-1</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
+            This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
+        <p>박스오피스 데이터: 영화진흥위원회 영화관입장권통합전산망(KOBIS), 기준일 2026-10-25</p>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
