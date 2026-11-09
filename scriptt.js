@@ -1,8 +1,25 @@
 // script.js : 내 영화 평점 통계(콘솔판)
 // 작성자 : 전동찬(2651060)
 const titles = ["미션 파서블", "미션 임파서블", "미션", "미션 임파서블: 로그네이션", "미션 임파서블: 파이널 레코닝"];
-const ratings = [7.40, 7.03, 7.40, 7.20, 7.16];
+const ratings = [7.40, 7.03, 7.41, 7.20, 7.16];
 const years = [2021, 1996, 1986, 2015, 2025];
+
+//즉시실행 함수 만들기
+(function init(){
+    console.log("나는 함수다. 실행이 되었다")
+}) ();
+//화살표함수로 함수 정의 하기
+const gugudan=  dan => {
+    for(let i=1; i<=9; i++){
+        console.log(`${dan} x ${i} = ${dan*i}`);
+    }
+}
+
+gugudan(7);
+
+const add = (num1, num2) => num1 + num2;
+
+console.log(add(1234,5678));
 let sum = 0;
 for (let i = 0; i < ratings.length; i++) {
  sum = sum + ratings[i];
@@ -41,31 +58,3 @@ const best = titles[maxIndex];
 alert(`내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best}`);
 
 
-//document.write("외부 스크립트 방법");
-
-//console.log("여기 부분은 웹페이지가 아니라 콘솔에 출력이 됩니다");
-//console.log("**엄청 나다 구구단 풀단!**");
-//for (let i = 1; i <= 9; i++) {
-    //for (let j = 1; j <= 9; j++) {
-      //  console.log(`${i} x ${j} = ${i * j}`)
-        
-    //}
-    //if (i === 3) {
-          //  console.log(`3단이 맞다`);
-        //} else {
-      //      console.log(`3단이 아닌 무언가다`);
-    //    }
-  //  console.log(` `)
-//}
-
-//let arr = [80, 70,' I puck you', 60, 90];
-//console.log(arr);
-//console.log(arr[2]);
-
-//let stdScore = {
-  //  korean : 80, engilsh : 70, math : 60, science : 90
-//};
-//console.log(stdScore);
-//console.log(stdScore.math);
-//stdScore.name = "홍길동";
-//console.log(stdScore.name);
