@@ -1,3 +1,14 @@
+:root {
+  --bg: #141e30;
+  --surface: #1f2b44;
+  --text: #f5f5f7;
+  --accent: #4da3ff;
+  --warn: #ff5a5f;
+  --font-title: "Black Han Sans", sans-serif;
+  --font-body: "Noto Sans KR", sans-serif;
+  --gap: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,175 +16,249 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d1b2a;
-  color: #ffffff;
-  padding-bottom: 50px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
-/* 네비게이션 바 */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #0d1b2a;
-}
-
-.navbar .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.navbar .menu {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar .menu a {
-  color: #a0aec0;
+a {
+  color: inherit;
   text-decoration: none;
-  font-size: 0.95rem;
 }
 
-.navbar .menu a:hover {
-  color: #fff;
-}
-
-/* 컨테이너 */
-.container {
-  max-width: 1200px;
+main {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 16px;
 }
 
-/* 히어로 배너 */
-.hero {
-  background: linear-gradient(135deg, #2b1055, #7597de);
-  border-radius: 16px;
-  padding: 50px 40px;
-  margin-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.hero-content h2 {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
-}
-
-.hero-content p {
-  color: #e2e8f0;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.hero-out {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px 15px;
-  border-radius: 6px;
-  font-size: 1rem;
-  display: inline-block;
-  font-family: inherit;
-}
-
-/* 영화 카드 그리드 (5개 일렬 배치) */
-.movie-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-@media (max-width: 1024px) {
-  .movie-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .movie-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.movie-card {
-  background-color: #1b263b;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease;
-}
-
-.movie-card:hover {
-  transform: translateY(-5px);
-}
-
-.poster-box {
-  position: relative;
-  width: 100%;
-  padding-top: 150%; /* 2:3 포스터 비율 */
-  background-color: #111;
-}
-
-.poster-box img {
-  position: absolute;
+header {
+  background-color: var(--surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  z-index: 100;
 }
 
-/* 우상단 노란색 평점 뱃지 */
-.rating-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ecc94b;
-  color: #1a202c;
-  font-weight: bold;
-  font-size: 0.85rem;
-  padding: 3px 8px;
-  border-radius: 10px;
-  z-index: 2;
-}
-
-.movie-info {
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  gap: 12px;
 }
 
-.movie-title {
-  font-size: 1.05rem;
-  font-weight: bold;
+header h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+              url("https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg") center/cover no-repeat;
+  height: 30vh;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.hero-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.basis {
+  font-size: 0.85rem;
+  color: rgba(245, 245, 247, 0.6);
+  margin-bottom: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.card {
+  background-color: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+.card .poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: block;
+}
+
+.card .info {
+  padding: 16px;
+}
+
+.card .info h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  margin-bottom: 6px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.movie-year {
+.card .info .year,
+.card .info .audience {
   font-size: 0.85rem;
-  color: #a0aec0;
+  opacity: 0.8;
 }
 
-.movie-desc {
+.card .rank {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--warn);
+  color: var(--text);
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.card .badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--accent);
+  padding: 4px 8px;
+  border-radius: 12px;
   font-size: 0.8rem;
-  color: #cbd5e0;
-  margin-top: 4px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  font-weight: bold;
+}
+
+.card .change {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.change.up {
+  color: var(--warn);
+}
+.change.up::before {
+  content: "▲ ";
+}
+
+.change.down {
+  color: var(--accent);
+}
+.change.down::before {
+  content: "▼ ";
+}
+
+.change.new {
+  color: var(--warn);
+}
+.change.new::before {
+  content: "NEW ";
 }
 
 footer {
-  margin-top: 60px;
+  background-color: var(--surface);
+  padding: 24px 16px;
   text-align: center;
   font-size: 0.8rem;
-  color: #718096;
+  opacity: 0.8;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+@media (min-width: 600px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.detail-info dl {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-info dt {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.detail-info dd {
+  color: var(--text);
+  margin-left: 0;
+  line-height: 1.6;
+}
+@media (min-width: 1024px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .board {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 }
